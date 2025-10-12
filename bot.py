@@ -1,16 +1,11 @@
-import imghdr
-import os
 import re
 import logging
 import time
-import os
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram.error import TelegramError
 
-# === BOT TOKENİNİ ENV DEĞİŞKENİNDEN AL ===
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN environment variable is not set!")
+# === BOT TOKENİNİ BURAYA YAZ ===
+BOT_TOKEN = "8380176620:AAHDSNJIsg-04gETMQNOHEnh7N7Bot5fA9k"
 
 # Liste formatında ilanlar
 ilanlar = []
